@@ -1,0 +1,17 @@
+.bg-dark {
+  background-color: #ffc107 !important;
+}
+
+.btn-primary {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffca28;
+}
+
+.navbar-brand img {
+  height: 4rem;
+}
+
+#container {
+  max-width: 540px;
+}

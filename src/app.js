@@ -22,7 +22,7 @@ app.get("/news", (req, res) => {
   if (!req.query.q) return res.send("add a phrase");
   NewsArticles(req.query.q, (error, response) => {
     if (error) return console.log("error");
-    res.send({ data: response });
+    res.send(response);
   });
 });
 
