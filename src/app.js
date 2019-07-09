@@ -28,14 +28,14 @@ app.get("/about", (req, res) => {
 app.get("/news", (req, res) => {
   if (!req.query.q) return res.send("add a phrase");
   NewsArticles(req.query.q, (error, response) => {
-    if (error) return console.log("error");
+    if (error) return console.log("error in news");
     res.send(response);
   });
 });
 
 app.get("/trends", (req, res) => {
   Trends(req.query.q, (error, response) => {
-    if (error) return console.log("error");
+    if (error) return console.log("error in trending");
     res.send(response);
   });
 });
