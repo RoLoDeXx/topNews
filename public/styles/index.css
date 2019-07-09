@@ -15,3 +15,12 @@
 #container {
   max-width: 540px;
 }
+
+.jumbotron {
+  background: #ffc107;
+  margin-top: 5rem;
+}
+
+.card-body {
+  background: aliceblue;
+}

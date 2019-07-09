@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trending | News Mon</title>
+    <title>About | News Mon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -13,23 +12,22 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="icon" href="./imgs/sitelogo.png">
 
+
 </head>
 
 <body>
     {{>nav}}
-
-    <div class="container" id="container">
-
-        {{>cards}}
-
+    <div class="container">
+        <div class="jumbotron">
+            <h1>News Mon</h1>
+            <p><b>News Mon</b> is a simple news article curator written in NodeJS.</p>
+            <p>Powered By News API</p>
+        </div>
     </div>
-
-    <script src="./js/trending.js"></script>
 
     <footer class="page-footer font-small blue pt-4">
         <div class="footer-copyright text-center py-3">Made with ❤ By Sam</div>
     </footer>
-
 </body>
 
 </html>

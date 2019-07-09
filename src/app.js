@@ -21,6 +21,10 @@ app.get("/trending", (req, res) => {
   res.render("trending");
 });
 
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
 app.get("/news", (req, res) => {
   if (!req.query.q) return res.send("add a phrase");
   NewsArticles(req.query.q, (error, response) => {
