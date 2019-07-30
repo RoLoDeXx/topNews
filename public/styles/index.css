@@ -24,3 +24,16 @@
 .card-body {
   background: aliceblue;
 }
+
+.loadMoreBtn {
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  color: #ffc107;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.loadMoreBtn:hover {
+  color: #b18500;
+}
