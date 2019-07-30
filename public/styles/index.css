@@ -14,6 +14,8 @@
 
 #container {
   max-width: 540px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .jumbotron {
@@ -36,4 +38,10 @@
 
 .loadMoreBtn:hover {
   color: #b18500;
+}
+
+.lost {
+  background: #ffc107;
+  padding: 1rem;
+  border-radius: 5px;
 }
