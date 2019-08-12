@@ -17,10 +17,6 @@ app.get("", (req, res) => {
   res.render("index");
 });
 
-app.get("/trending", (req, res) => {
-  res.render("trending");
-});
-
 app.get("/about", (req, res) => {
   res.render("about");
 });
@@ -36,7 +32,10 @@ app.get("/news", (req, res) => {
 app.get("/trends", (req, res) => {
   Trends(req.query.q, (error, response) => {
     if (error) return console.log("error in trending");
-    res.send(response);
+    //res.send(response);
+    res.render("trending", {
+      news: response
+    });
   });
 });
 

@@ -19,12 +19,18 @@
     {{>nav}}
 
     <div class="container" id="container">
-
-        {{>cards}}
-
+        {{#each news}}
+        <div class="card">
+            <img class=" card-img-top" src={{this.urlToImage}} alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">{{this.title}}</h4>
+                <p class="card-text">{{this.content}}</p>
+                <a href="#" class="btn btn-primary  ">See Profile</a>
+            </div>
+        </div>
+        {{/each}}
     </div>
 
-    <script src="./js/trending.js"></script>
 
     <footer class="page-footer font-small blue pt-4">
         <div class="footer-copyright text-center py-3">Made with ❤ By Sam</div>
