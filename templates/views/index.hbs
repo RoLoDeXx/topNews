@@ -25,7 +25,16 @@
             </div>
         </form>
 
-        {{>cards}}
+        {{#each news}}
+        <div class="card">
+            <img class=" card-img-top" src={{this.urlToImage}} alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">{{this.title}}</h4>
+                <p class="card-text">{{this.content}}</p>
+                <a href="#" class="btn btn-primary  ">See Profile</a>
+            </div>
+        </div>
+        {{/each}}
 
 
 
@@ -33,7 +42,6 @@
     <footer class="page-footer font-small blue pt-4">
         <div class="footer-copyright text-center py-3">Made with ❤ By Sam</div>
     </footer>
-    <script src="./js/index.js"></script>
 
 
 
