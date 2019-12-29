@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.3.0",
     "hbs": "^4.0.4",
     "node-fetch": "^2.6.0",
     "path": "^0.12.7",
